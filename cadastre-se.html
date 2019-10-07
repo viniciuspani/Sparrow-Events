@@ -70,22 +70,81 @@
                         <div class="col-sm-3">
                             <img src="assets/img/pessoa_icon.png">
                         </div>
+                        <!--CADASTRO PESSOAL-->
                         <div class="col-sm-9">
+                            <!--NOME-->
                             <div class="form-group row">
                                 <label for="nome" class="col-sm-2 col-form-label">Nome</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="nome" placeholder="Insira seu nome">
                                 </div>
                             </div>
+                            <!--NASCIMENTO-->
                             <div class="form-group row">
-                                    <label for="nascimento" class="col-sm-2 col-form-label">Nascimento</label>
-                                    <div class="col-sm-10">
-                                        <input type="date" class="form-control" id="nascimento" placeholder="Insira sua data nascimento">
+                                <label for="nascimento" class="col-sm-2 col-form-label">Nascimento</label>
+                                <div class="col-sm-10">
+                                    <input type="date" class="form-control" id="nascimento"
+                                        placeholder="Insira sua data nascimento">
+                                </div>
+                            </div>
+                            <!--SEXO-->
+                            <div class="form-group row">
+                                <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="optsexo" value="M" checked>
+                                        <label class="form-check-label" for="optsexo">
+                                            Masculino
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="optsexo" value="F">
+                                        <label class="form-check-label" for="optesexo">
+                                            Feminino
+                                        </label>
                                     </div>
                                 </div>
+                            </div>
+                            <!--FORMACAO-->
+                            <div class="form-group row">
+                                <label for="formacao" class="col-sm-2 col-form-label">Formação</label>
+                                <div class="col-sm-10">
+                                    <select id="formacao" class="form-control">
+                                        <option selected>Escolher...</option>
+                                        <option>Fundamental</option>
+                                        <option>Medio</option>
+                                        <option>Superior</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--PROFISSAO-->
+                            <div class="form-group row">
+                                <label for="profissao" class="col-sm-2 col-form-label">Profissão</label>
+                                <div class="col-sm-10">
+                                    <select id="profissao" class="form-control">
+                                        <optgroup label="Exatas">
+                                            <option selected>Escolher...</option>
+                                            <option>TI</option>
+                                            <option>Contabilidade</option>
+                                            <option>Engenharia</option>
+                                        </optgroup>
+                                        <optgroup label="Humanas">
+                                            <option selected>Escolher...</option>
+                                            <option>Portugues</option>
+                                            <option>Direito</option>
+                                            <option>Biologia</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--CPF-->
+                            <div class="form-group row">
+                                <label for="cpf" class="col-sm-2 col-form-label">CPF</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="cpf" placeholder="Insira seu cpf">
+                                </div>
+                            </div>
                         </div>
-
-                    </div>
                 </fieldset>
             </div>
         </div>
