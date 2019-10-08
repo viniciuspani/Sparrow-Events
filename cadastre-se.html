@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/sparrow-events.css">
 
     <title>Sparrow-Events-Cadastre-se</title>
@@ -74,75 +74,66 @@
                         <div class="col-sm-9">
                             <!--NOME-->
                             <div class="form-group row">
-                                <label for="nome" class="col-sm-2 col-form-label col-form-label-sm">Nome</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="nome" placeholder="Insira seu nome">
-                                </div>
+                                <label for="nome" class="col-form-label col-form-label-sm">Nome:</label>
+                                <input type="text" class="form-control form-control-sm" id="nome"
+                                    placeholder="Insira seu nome">
                             </div>
                             <!--NASCIMENTO-->
                             <div class="form-group row">
-                                <label for="nascimento" class="col-sm-2 col-form-label col-form-label-sm">Nascimento</label>
-                                <div class="col-sm-10">
-                                    <input type="date" class="form-control form-control-sm" id="nascimento"
-                                        placeholder="Insira sua data nascimento">
-                                </div>
+                                <label for="dataNascimento" class="col-form-label col-form-label-sm">Data
+                                    Nascimento:</label>
+                                <input type="date" class="form-control form-control-sm" id="dataNascimento"
+                                    placeholder="Insira sua data nascimento">
                             </div>
                             <!--SEXO-->
                             <div class="form-group row">
-                                <legend class="col-form-label col-sm-2 pt-0 col-form-label-sm">Sexo</legend>
-                                <div class="col-sm-10">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-control-sm" type="radio" name="optsexo" value="M" checked>
-                                        <label class="form-check-label col-form-label-sm" for="optsexo">
-                                            Masculino
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-control-sm" type="radio" name="optsexo" value="F">
-                                        <label class="form-check-label col-form-label-sm" for="optesexo">
-                                            Feminino
-                                        </label>
-                                    </div>
+                                <label class="col-form-label-sm">Sexo</label>
+                                <div class="custom-control custom-radio col-form-label-sm">
+                                    <input type="radio" id="radioMasculino" name="radioSexo"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="radioMasculino">Masculino</label>
+                                </div>
+                                <div class="custom-control custom-radio col-form-label-sm">
+                                    <input type="radio" id="radioFeminino" name="radioSexo"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="radioFeminino">Feminino</label>
                                 </div>
                             </div>
                             <!--FORMACAO-->
                             <div class="form-group row">
-                                <label for="formacao" class="col-sm-2 col-form-label col-form-label-sm">Formação</label>
-                                <div class="col-sm-10">
-                                    <select id="formacao" class="form-control form-control-sm">
-                                        <option selected>Escolher...</option>
-                                        <option>Fundamental</option>
-                                        <option>Medio</option>
-                                        <option>Superior</option>
-                                    </select>
-                                </div>
+                                <label for="selectFormacao" class="col-form-label col-form-label-sm">Formação:</label>
+                                <select id="selectFormacao" class="form-control form-control-sm">
+                                    <option selected>Escolher...</option>
+                                    <option>Fundamental</option>
+                                    <option>Medio</option>
+                                    <option>Superior</option>
+                                </select>
                             </div>
                             <!--PROFISSAO-->
                             <div class="form-group row">
-                                <label for="profissao" class="col-sm-2 col-form-label col-form-label-sm">Profissão</label>
-                                <div class="col-sm-10">
-                                    <select id="profissao" class="form-control form-control-sm">
-                                        <optgroup label="Exatas">
-                                            <option selected>Escolher...</option>
-                                            <option>TI</option>
-                                            <option>Contabilidade</option>
-                                            <option>Engenharia</option>
-                                        </optgroup>
-                                        <optgroup label="Humanas">
-                                            <option selected>Escolher...</option>
-                                            <option>Portugues</option>
-                                            <option>Direito</option>
-                                            <option>Biologia</option>
-                                        </optgroup>
-                                    </select>
-                                </div>
+                                <label for="selectProfissao" class="col-form-label col-form-label-sm">Profissão:</label>
+                                <select id="selectProfissao" class="form-control form-control-sm">
+                                    <optgroup label="Exatas">
+                                        <option selected>Escolher...</option>
+                                        <option>Analise de Sistema</option>
+                                        <option>Dev. Frontend</option>
+                                        <option>Dev. Backend</option>
+                                        <option>Dev. FullStack</option>
+                                    </optgroup>
+                                    <optgroup label="Humanas">
+                                        <option selected>Escolher...</option>
+                                        <option>Portugues</option>
+                                        <option>Direito</option>
+                                        <option>Biologia</option>
+                                        <option>Psicologia</option>
+                                    </optgroup>
+                                </select>
                             </div>
                             <!--CPF-->
                             <div class="form-group row">
-                                <label for="cpf" class="col-sm-2 col-form-label col-form-label-sm">CPF</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="cpf" placeholder="Insira seu cpf">
-                                </div>
+                                <label for="cpf" class=" col-form-label col-form-label-sm">CPF</label>
+                                <input type="text" class="form-control form-control-sm" id="cpf"
+                                    placeholder="Insira seu cpf">
                             </div>
                         </div>
                 </fieldset>
@@ -162,38 +153,30 @@
                         <div class="col-sm-9">
                             <!--EMAIL-->
                             <div class="form-group row">
-                                <label for="email" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control form-control-sm" id="email" placeholder="Insira seu email"
-                                        required>
-                                    <span class='hint small'>por exemplo, email@email.com.br</span>
-                                </div>
+                                <label for="email" class="col-form-label-sm">Email</label>
+                                <input type="email" class="form-control form-control-sm" id="email"
+                                    placeholder="Insira seu email" required>
+                                <span class='hint small'>por exemplo, email@email.com.br</span>
                             </div>
                             <!--TELEFONE-->
                             <div class="form-group row">
-                                <label for="telefone" class="col-sm-2 col-form-label col-form-label-sm">Telefone</label>
-                                <div class="col-sm-10">
-                                    <input type="tel" class="form-control form-control-sm" id="telefone"
-                                        placeholder="Insira seu telefone" required>
-                                    <span class='hint small'>por exemplo, (27) 99999-9999</span>
-                                </div>
+                                <label for="telefone" class="col-form-label-sm">Telefone</label>
+                                <input type="tel" class="form-control form-control-sm" id="telefone"
+                                    placeholder="Insira seu telefone" required>
+                                <span class='hint small'>por exemplo, (27) 99999-9999</span>
                             </div>
                             <!--CELULAR-->
                             <div class="form-group row">
-                                <label for="celular" class="col-sm-2 col-form-label col-form-label-sm">Celular</label>
-                                <div class="col-sm-10">
-                                    <input type="tel" class="form-control form-control-sm" id="celular"
-                                        placeholder="Insira seu nº celular" required>
-                                    <span class='hint small'>por exemplo, (27) 99999-9999</span>
-                                </div>
+                                <label for="celular" class="col-form-label-sm">Celular</label>
+                                <input type="tel" class="form-control form-control-sm" id="celular"
+                                    placeholder="Insira seu nº celular" required>
+                                <span class='hint small'>por exemplo, (27) 99999-9999</span>
                             </div>
                             <!--SKYPE-->
                             <div class="form-group row">
-                                <label for="skype" class="col-sm-2 col-form-label col-form-label-sm">Skype</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="skype" placeholder="Insira seu skype"
-                                        required>
-                                </div>
+                                <label for="skype" class="col-form-label-sm">Skype</label>
+                                <input type="text" class="form-control form-control-sm" id="skype"
+                                    placeholder="Insira seu skype" required>
                             </div>
                         </div>
                 </fieldset>
@@ -213,11 +196,10 @@
                         <div class="col-sm-9">
                             <!--LOGRADOURO-->
                             <div class="form-group row">
-                                <label for="txtlogradouro" class="col-sm-2 col-form-label col-form-label-sm">Logradouro</label>
-                                <div class="col-sm-10">
+                                <label for="txtlogradouro"
+                                    class="col-form-label-sm">Logradouro</label>                                
                                     <input type="text" class="form-control form-control-sm" id="txtlogradouro"
-                                        placeholder="Insira seu endereço" required>
-                                </div>
+                                        placeholder="Insira seu endereço" required>                                
                             </div>
                             <!--NUMERO CASA-->
                             <div class="form-group row">
@@ -231,8 +213,8 @@
                             <div class="form-group row">
                                 <label for="cep" class="col-sm-2 col-form-label col-form-label-sm">CEP</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="txtcep" placeholder="Insira seu cep"
-                                        required>
+                                    <input type="text" class="form-control form-control-sm" id="txtcep"
+                                        placeholder="Insira seu cep" required>
                                 </div>
                             </div>
                             <!--BAIRRO-->
@@ -266,7 +248,8 @@
                             </div>
                             <!--COMPLEMENTO-->
                             <div class="form-group row">
-                                <label for="txtcomplemento" class="col-sm-2 col-form-label col-form-label-sm">Complemento</label>
+                                <label for="txtcomplemento"
+                                    class="col-sm-2 col-form-label col-form-label-sm">Complemento</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control form-control-sm" id="txtcomplemento"
                                         placeholder="Insira sua complemento" required>
@@ -282,6 +265,11 @@
 
     </div>
     <!--Fechamento div container-->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Coloque o conteúdo do sticky footer aqui.</span>
+        </div>
+    </footer>
 
 
 
