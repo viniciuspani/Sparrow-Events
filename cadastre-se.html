@@ -2,284 +2,93 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/sparrow-events.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/sparrow-events.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400&display=swap" rel="stylesheet">
 
-    <title>Sparrow-Events-Cadastre-se</title>
+  <title>Sparrow-events - cadastre-se</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
-        <a class="navbar-brand" href="index.html">Sparrow Events</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item hover">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="cadastre-se.html">Cadastre-se</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Eventos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <!--fechamento menu navegação site-->
+  
+  <section class="py-5">
     <div class="container">
-        <div class="row">
-            <!--ROW é linha, e no boostrap a linha possui 12 colunas, a manipulação é feita na coluna-->
-            <div class="col-sm-12">
-                <h1>Seja bem vindo!</h1>
-                <p>Realize seu cadastro</p>
+      <div class="row">
+        <div class="col-md-4 py-5 bg-primary text-white text-center ">
+          <div class=" ">
+            <div class="card-body">
+              <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
+              <h2 class="py-3">Registration</h2>
+              <p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto
+                patrioque an per, lucilius pertinacia eu vel.
+              </p>
             </div>
-            <!--Fecha div coluna small 12-->
+          </div>
         </div>
-        <!--LINHA DADOS PESSOAIS-->
-        <div class="row">
-            <div class="col-sm-12">
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img src="assets/img/pessoa_icon.png">
-                        </div>
-                        <!--CADASTRO PESSOAL-->
-                        <div class="col-sm-9">
-                            <!--NOME-->
-                            <div class="form-group row">
-                                <label for="nome" class="col-form-label col-form-label-sm">Nome:</label>
-                                <input type="text" class="form-control form-control-sm" id="nome"
-                                    placeholder="Insira seu nome">
-                            </div>
-                            <!--NASCIMENTO-->
-                            <div class="form-group row">
-                                <label for="dataNascimento" class="col-form-label col-form-label-sm">Data
-                                    Nascimento:</label>
-                                <input type="date" class="form-control form-control-sm" id="dataNascimento"
-                                    placeholder="Insira sua data nascimento">
-                            </div>
-                            <!--SEXO-->
-                            <div class="form-group row">
-                                <label class="col-form-label-sm">Sexo</label>
-                                <div class="custom-control custom-radio col-form-label-sm">
-                                    <input type="radio" id="radioMasculino" name="radioSexo"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="radioMasculino">Masculino</label>
-                                </div>
-                                <div class="custom-control custom-radio col-form-label-sm">
-                                    <input type="radio" id="radioFeminino" name="radioSexo"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="radioFeminino">Feminino</label>
-                                </div>
-                            </div>
-                            <!--FORMACAO-->
-                            <div class="form-group row">
-                                <label for="selectFormacao" class="col-form-label col-form-label-sm">Formação:</label>
-                                <select id="selectFormacao" class="form-control form-control-sm">
-                                    <option selected>Escolher...</option>
-                                    <option>Fundamental</option>
-                                    <option>Medio</option>
-                                    <option>Superior</option>
-                                </select>
-                            </div>
-                            <!--PROFISSAO-->
-                            <div class="form-group row">
-                                <label for="selectProfissao" class="col-form-label col-form-label-sm">Profissão:</label>
-                                <select id="selectProfissao" class="form-control form-control-sm">
-                                    <optgroup label="Exatas">
-                                        <option selected>Escolher...</option>
-                                        <option>Analise de Sistema</option>
-                                        <option>Dev. Frontend</option>
-                                        <option>Dev. Backend</option>
-                                        <option>Dev. FullStack</option>
-                                    </optgroup>
-                                    <optgroup label="Humanas">
-                                        <option selected>Escolher...</option>
-                                        <option>Portugues</option>
-                                        <option>Direito</option>
-                                        <option>Biologia</option>
-                                        <option>Psicologia</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                            <!--CPF-->
-                            <div class="form-group row">
-                                <label for="cpf" class=" col-form-label col-form-label-sm">CPF</label>
-                                <input type="text" class="form-control form-control-sm" id="cpf"
-                                    placeholder="Insira seu cpf">
-                            </div>
-                        </div>
-                </fieldset>
+        <div class="col-md-8 py-5 border">
+          <h4 class="pb-4">Please fill with your details</h4>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input id="Full Name" name="Full Name" placeholder="Full Name" class="form-control" type="text">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
             </div>
-        </div>
-        <!--FECHAMENTO LINHA DADOS PESSOAIS-->
-        <!--LINHA CONTATO-->
-        <div class="row">
-            <div class="col-sm-12">
-                <fieldset>
-                    <legend>Contato</legend>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img src="assets/img/contact.png.jpg">
-                        </div>
-                        <!--CADASTRO CONTATO-->
-                        <div class="col-sm-9">
-                            <!--EMAIL-->
-                            <div class="form-group row">
-                                <label for="email" class="col-form-label-sm">Email</label>
-                                <input type="email" class="form-control form-control-sm" id="email"
-                                    placeholder="Insira seu email" required>
-                                <span class='hint small'>por exemplo, email@email.com.br</span>
-                            </div>
-                            <!--TELEFONE-->
-                            <div class="form-group row">
-                                <label for="telefone" class="col-form-label-sm">Telefone</label>
-                                <input type="tel" class="form-control form-control-sm" id="telefone"
-                                    placeholder="Insira seu telefone" required>
-                                <span class='hint small'>por exemplo, (27) 99999-9999</span>
-                            </div>
-                            <!--CELULAR-->
-                            <div class="form-group row">
-                                <label for="celular" class="col-form-label-sm">Celular</label>
-                                <input type="tel" class="form-control form-control-sm" id="celular"
-                                    placeholder="Insira seu nº celular" required>
-                                <span class='hint small'>por exemplo, (27) 99999-9999</span>
-                            </div>
-                            <!--SKYPE-->
-                            <div class="form-group row">
-                                <label for="skype" class="col-form-label-sm">Skype</label>
-                                <input type="text" class="form-control form-control-sm" id="skype"
-                                    placeholder="Insira seu skype" required>
-                            </div>
-                        </div>
-                </fieldset>
-            </div>
-        </div>
-        <!--FECHAMENTO LINHA CONTATO-->
-        <!--LINHA ENDEREÇO-->
-        <div class="row">
-            <div class="col-sm-12">
-                <fieldset>
-                    <legend>Endereço</legend>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img src="assets/img/addres.png">
-                        </div>
-                        <!--CADASTRO ENDEREÇO-->
-                        <div class="col-sm-9">
-                            <!--LOGRADOURO-->
-                            <div class="form-group row">
-                                <label for="txtlogradouro"
-                                    class="col-form-label-sm">Logradouro</label>                                
-                                    <input type="text" class="form-control form-control-sm" id="txtlogradouro"
-                                        placeholder="Insira seu endereço" required>                                
-                            </div>
-                            <!--NUMERO CASA-->
-                            <div class="form-group row">
-                                <label for="txtmnumero" class="col-sm-2 col-form-label col-form-label-sm">Numero</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="txtnumero"
-                                        placeholder="Insira o numero de sua casa" required>
-                                </div>
-                            </div>
-                            <!--CEP-->
-                            <div class="form-group row">
-                                <label for="cep" class="col-sm-2 col-form-label col-form-label-sm">CEP</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="txtcep"
-                                        placeholder="Insira seu cep" required>
-                                </div>
-                            </div>
-                            <!--BAIRRO-->
-                            <div class="form-group row">
-                                <label for="txtbairro" class="col-sm-2 col-form-label col-form-label-sm">Bairro</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="txtbairro"
-                                        placeholder="Insira seu bairro" required>
-                                </div>
-                            </div>
-                            <!--CIDADE-->
-                            <div class="form-group row">
-                                <label for="txtcidade" class="col-sm-2 col-form-label col-form-label-sm">Cidade</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="txtcidade"
-                                        placeholder="Insira sua cidade" required>
-                                </div>
-                            </div>
-                            <!--ESTADO-->
-                            <div class="form-group row">
-                                <label for="cboestado" class="col-sm-2 col-form-label col-form-label-sm">Estado</label>
-                                <div class="col-sm-10">
-                                    <select id="cboestado" class="form-control col-form-label-sm">
-                                        <option selected>Escolher...</option>
-                                        <option>RJ</option>
-                                        <option>SP</option>
-                                        <option>ES</option>
-                                        <option>MG</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!--COMPLEMENTO-->
-                            <div class="form-group row">
-                                <label for="txtcomplemento"
-                                    class="col-sm-2 col-form-label col-form-label-sm">Complemento</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm" id="txtcomplemento"
-                                        placeholder="Insira sua complemento" required>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" type="submit" value="Atualizar Dados">Enviar</button>
-                        <button class="btn btn-secondary" type="reset" value="Limpar Dados">Limpar Dados</button>
-                </fieldset>
-            </div>
-        </div>
-        <!--FECHAMENTO LINHA ENDEREÇO-->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input id="Mobile No." name="Mobile No." placeholder="Mobile No." class="form-control"
+                  required="required" type="text">
+              </div>
+              <div class="form-group col-md-6">
 
+                <select id="inputState" class="form-control">
+                  <option selected>Choose ...</option>
+                  <option> New Buyer</option>
+                  <option> Auction</option>
+                  <option> Complaint</option>
+                  <option> Feedback</option>
+                </select>
+              </div>
+              <div class="form-group col-md-12">
+                <textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                      <small>By clicking Submit, you agree to our Terms & Conditions, Visitor Agreement and Privacy
+                        Policy.</small>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="form-row">
+              <button type="button" class="btn btn-danger">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <!--Fechamento div container-->
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-            <span class="text-muted">Coloque o conteúdo do sticky footer aqui.</span>
-        </div>
-    </footer>
+  </section>
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,12 @@
-.bg-roxo{
-    background-color: #563d7c;
-}
-
-img{
-    width: 150px;
-}
-input{
-    box-shadow: blue;
-}
-
+html{
+    font-family: "Roboto" !important;
+    }
+    /* img{
+       width: 150px;
+    } */
+    .bg-roxo{
+       background-color:  #563d7c;
+    }
+    input{
+        box-shadow: blue;
+    }
